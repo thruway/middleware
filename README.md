@@ -1,5 +1,7 @@
 Thruway Middleware
 ==================
+>This package is currently in development. Feel free to use and let us know if you encounter any issues.
+
 thruway/middleware allows you to easily use your [Thruway](https://github.com/voryx/Thruway) router
 inside of [react/http](https://github.com/reactphp/http) as [middleware](https://github.com/reactphp/http#middleware).
 
