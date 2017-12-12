@@ -47,6 +47,7 @@ final class Middleware implements RouterTransportProviderInterface
     {
         $this->loop = $loop;
 
+        $this->router = $router;
         if ($router === null) {
             $this->router = new Router($loop);
         }
