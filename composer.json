@@ -2,6 +2,25 @@
     "name": "thruway/middleware",
     "description": "Thruway WAMP router middleware for react/http",
     "type": "library",
+    "keywords": [
+        "Thruway",
+        "WebSockets",
+        "Server",
+        "Client",
+        "WAMP",
+        "WAMP2",
+        "Autobahn",
+        "Sockets"
+    ],
+    "authors": [
+        {
+            "name": "Matt Bonneau", "email": "matt@bonneau.net", "role": "Developer"
+        },
+
+        {
+            "name": "David Dan", "email": "davidwdan@gmail.com", "role": "Developer"
+        }
+    ],
     "require": {
         "react/http": "^0.8.0",
         "voryx/thruway": "^0.5.0",
