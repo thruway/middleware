@@ -24,7 +24,7 @@
     "require": {
         "react/http": "^0.8.0",
         "voryx/thruway": "^0.5.0",
-        "voryx/websocketmiddleware": "dev-master"
+        "voryx/websocketmiddleware": "^1.0.3"
     },
     "autoload": {
         "psr-4": {
