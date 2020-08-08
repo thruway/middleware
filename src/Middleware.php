@@ -5,7 +5,7 @@ namespace Thruway;
 use function GuzzleHttp\Psr7\parse_query;
 use Psr\Http\Message\ServerRequestInterface;
 use React\EventLoop\LoopInterface;
-use React\Http\Response;
+use React\Http\Message\Response;
 use Thruway\Event\ConnectionCloseEvent;
 use Thruway\Event\ConnectionOpenEvent;
 use Thruway\Event\RouterStartEvent;
@@ -128,7 +128,7 @@ final class Middleware implements RouterTransportProviderInterface
         }
     }
 
-    public function __invoke(ServerRequestInterface $request, callable $next)
+    public function __invoke(ServerRequestInterface $request, callable $next = null)
     {
         return $this->webSocketMiddleware->__invoke($request, $next);
     }
