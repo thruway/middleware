@@ -10,7 +10,7 @@ $loop = Factory::create();
 
 $thruway = new Middleware(['/thruway'], $loop);
 
-$server = new Server($thruway);
+$server = new Server($loop, $thruway);
 $server->listen(new \React\Socket\Server('tcp://127.0.0.1:9001', $loop));
 
 $loop->run();

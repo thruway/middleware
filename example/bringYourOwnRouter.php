@@ -28,7 +28,7 @@ $router->start(false);
 
 $thruway = new Middleware(['/thruway'], $loop, $router);
 
-$server = new Server($thruway);
+$server = new Server($loop, $thruway);
 $server->listen(new \React\Socket\Server('tcp://127.0.0.1:9001', $loop));
 
 $loop->run();
