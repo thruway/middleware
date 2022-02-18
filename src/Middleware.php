@@ -43,7 +43,7 @@ final class Middleware implements RouterTransportProviderInterface
     /** @var bool */
     private $started = false;
 
-    public function __construct(array $paths = [], LoopInterface $loop, Router $router = null)
+    public function __construct(array $paths, LoopInterface $loop, Router $router = null)
     {
         $this->loop = $loop;
 
